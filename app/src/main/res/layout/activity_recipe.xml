@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/iv_detail"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="14dp"
+        android:layout_height="180dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/chicken01"
+        />
+
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_detail"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="14dp"
+                android:text="TextView"
+                android:textStyle="normal|bold"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tving"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvtitle"
+                android:layout_marginTop="14dp"
+                android:text="Ingredients"
+                android:textStyle="bold"
+                 />
+
+            <TextView
+                android:id="@+id/tvIngredients"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tving"
+                android:layout_marginTop="14dp"
+                android:text="TextView"
+                />
+
+            <TextView
+                android:id="@+id/tvDir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvIngredients"
+                android:layout_marginTop="14dp"
+                android:text="Directions"
+                android:textStyle="bold"
+                 />
+
+            <TextView
+                android:id="@+id/tvDecsription"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/tvDir"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="20dp"
+                android:text="TextView"
+                />
+
+            <Button
+                android:text="Take a pic before you eat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:id="@+id/camerabutton"
+                android:layout_below="@+id/tvDecsription"
+                android:backgroundTint="#b18df1"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:text="Search Again"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonSearch1"
+                android:layout_below="@+id/tvDecsription"
+                android:layout_alignParentEnd="true"
+                android:backgroundTint="#b18df1"
+                android:textColor="#ffffff"
+                />
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
